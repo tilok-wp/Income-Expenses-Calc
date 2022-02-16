@@ -30,8 +30,8 @@
                         <img src="images/bg-image.jpg" alt="Banner image" class="img-fluid">
                      </div>
                   </div>
-                  <div class="col-12 col-lg-6">
-                     <div class="box-wraper bg-light text-center p-3">
+                  <div class="col-12 col-lg-6 bg-light">
+                     <div class="box-wraper text-center p-3">
                         <div class="income-wraper mt-3">
                            <h5>Income</h5>
                            <div class="input-block-wraper">
@@ -57,14 +57,17 @@
                         </div>
                         <button id="calculate-btn" class="btn btn-info text-white">Calculate</button>
                         <div class="result-wraper mt-2">
+                           <p id="blance-error-massage" class="text-danger"></p>
                            <h5>Total Expenses: <strong id="total-expence">00</strong></h5>
                            <h5>Balance: <strong id="balance">00</strong></h5>
                         </div>
                         <div class="savings-wraper mt-4">
                            <div class="input-block-wraper mb-3">
                               <label>Savings: </label>
-                              <input class="form-control" type="text" value="" placeholder="Savings %"> % <button class="btn btn-info text-white ms-3">Saving</button>
+                              <input id="saving-percent" class="form-control" type="text" value="" placeholder="Savings %"> % 
+                              <button id="saving-btn" class="btn btn-info text-white ms-3">Saving</button>
                            </div>
+                           <p id="saving-error-massage" class="text-danger"></p>
                            <h5>Savings Amount: <strong id="savings-amount">00</strong></h5>
                            <h5>Remaining Balance: <strong id="remaining-balance">00</strong></h5>
                         </div>
