@@ -35,33 +35,38 @@
                         <div class="income-wraper mt-3">
                            <h5>Income</h5>
                            <div class="input-block-wraper">
-                              <label>Income: </label><input class="form-control"  type="text" placeholder="Income amount">
+                              <label>Income: </label>
+                              <input id="income-amount" class="form-control"  type="text" value="" placeholder="Income amount">
 
                            </div>
                         </div>
                         <div class="expence-wraper mt-3">
                            <h5>Expenses</h5>
                            <div class="input-block-wraper mb-2">
-                              <label>Food: </label><input class="form-control" type="text" placeholder="Food expence">
+                              <label>Food: </label>
+                              <input id="food-expence" class="form-control" type="text" value="" placeholder="Food expence">
                            </div>
                            <div class="input-block-wraper mb-2">
-                              <label>Rent: </label><input class="form-control" type="text" placeholder="Rent expence">
+                              <label>Rent: </label>
+                              <input id="rent-expence" class="form-control" type="text" value="" placeholder="Rent expence">
                            </div>
                            <div class="input-block-wraper mb-3">
-                              <label>Clothes: </label><input class="form-control" type="text" placeholder="Clothes expence">
+                              <label>Clothes: </label>
+                              <input id="cloth-expence" class="form-control" type="text" value="" placeholder="Clothes expence">
                            </div>
                         </div>
-                        <button class="btn btn-info text-white">Calculate</button>
+                        <button id="calculate-btn" class="btn btn-info text-white">Calculate</button>
                         <div class="result-wraper mt-2">
-                           <h5>Total Expenses: <strong>00</strong></h5>
-                           <h5>Balance: <strong>00</strong></h5>
+                           <h5>Total Expenses: <strong id="total-expence">00</strong></h5>
+                           <h5>Balance: <strong id="balance">00</strong></h5>
                         </div>
                         <div class="savings-wraper mt-4">
                            <div class="input-block-wraper mb-3">
-                              <label>Savings: </label><input class="form-control" type="text" placeholder="Savings %"> % <button class="btn btn-info text-white ms-3">Saving</button>
+                              <label>Savings: </label>
+                              <input class="form-control" type="text" value="" placeholder="Savings %"> % <button class="btn btn-info text-white ms-3">Saving</button>
                            </div>
-                           <h5>Savings Amount: <strong>00</strong></h5>
-                           <h5>Remaining Balance: <strong>00</strong></h5>
+                           <h5>Savings Amount: <strong id="savings-amount">00</strong></h5>
+                           <h5>Remaining Balance: <strong id="remaining-balance">00</strong></h5>
                         </div>
                      </div>
                   </div>
