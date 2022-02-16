@@ -9,6 +9,15 @@ body {
     color: #6C6C6C;
 }
 h1,h2,h3,h4 {
-    font-weight: bold;
+    font-weight: 600;
     line-height: 1.4;
+}
+.input-block-wraper input:focus{
+    box-shadow: none;
+}
+.input-block-wraper input {
+    display: inline-block;
+    width: 200px;
+    margin:0 15px;
+    padding: 5px 10px;
 }

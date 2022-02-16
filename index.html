@@ -15,12 +15,58 @@
    <body>
       <!-- Header Part -->
       <header>
-
+         <div class="logo-box text-center mt-3">
+            <img src="images/logo.png" alt="Logo Image">
+         </div>
+         <h1 class="text-center mt-2 mb-3">Income-<strong>Expence</strong> Management</h1>
       </header>
       <!-- Main content -->
       <main>
-         <section>
-            
+         <section class="income-expence-section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 col-lg-6">
+                     <div class="image-box">
+                        <img src="images/bg-image.jpg" alt="Banner image" class="img-fluid">
+                     </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                     <div class="box-wraper bg-light text-center p-3">
+                        <div class="income-wraper mt-3">
+                           <h5>Income</h5>
+                           <div class="input-block-wraper">
+                              <label>Income: </label><input class="form-control"  type="text" placeholder="Income amount">
+
+                           </div>
+                        </div>
+                        <div class="expence-wraper mt-3">
+                           <h5>Expenses</h5>
+                           <div class="input-block-wraper mb-2">
+                              <label>Food: </label><input class="form-control" type="text" placeholder="Food expence">
+                           </div>
+                           <div class="input-block-wraper mb-2">
+                              <label>Rent: </label><input class="form-control" type="text" placeholder="Rent expence">
+                           </div>
+                           <div class="input-block-wraper mb-3">
+                              <label>Clothes: </label><input class="form-control" type="text" placeholder="Clothes expence">
+                           </div>
+                        </div>
+                        <button class="btn btn-info text-white">Calculate</button>
+                        <div class="result-wraper mt-2">
+                           <h5>Total Expenses: <strong>00</strong></h5>
+                           <h5>Balance: <strong>00</strong></h5>
+                        </div>
+                        <div class="savings-wraper mt-4">
+                           <div class="input-block-wraper mb-3">
+                              <label>Savings: </label><input class="form-control" type="text" placeholder="Savings %"> % <button class="btn btn-info text-white ms-3">Saving</button>
+                           </div>
+                           <h5>Savings Amount: <strong>00</strong></h5>
+                           <h5>Remaining Balance: <strong>00</strong></h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </section>
       </main>
 
