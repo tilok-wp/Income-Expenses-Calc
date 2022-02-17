@@ -17,7 +17,6 @@ function getInputValue(idName){
     }else{
         inputField.insertAdjacentHTML("afterend", '<p class="input-error text-danger">Invalid input! input number value</p>');
     }
-
 }
 
 // Expence and blance caculation
@@ -53,17 +52,15 @@ function savingCalculation(){
         remainingGet.innerText = remainingBalance
         savingError.innerText = ''
     }else {
-        savingError.innerText = "Can't savings!! Savings is more than Blance"
+        savingError.innerText = "Not enough Money!! Savings is more than Blance"
         balanceError.innerText = savingsAmountGet.innerText = remainingGet.innerText = ""   
     }
 }
 // calculation event handaler
 document.getElementById('calculate-btn').addEventListener('click', function(){
-    expenceBalanceCalculation()
-    
+    expenceBalanceCalculation()    
 })
 // Savings event handaler
 document.getElementById('saving-btn').addEventListener('click', function(){
     savingCalculation()
-
 })
