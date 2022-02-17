@@ -5,9 +5,16 @@ function getInputValue(idName){
     const inputField = document.getElementById(idName)
     const inputValue = parseFloat(inputField.value)
 
-    if(typeof(inputValue) == 'number' && inputValue > 0){
+    if(typeof(inputValue) == 'number' && inputValue >= 0){
         return inputValue
+    }else if(inputValue < 0){
+        inputField.insertAdjacentHTML("afterend", '<p class="input-error text-danger">Negative number</p>');
+        return 0
+    }else{
+        inputField.insertAdjacentHTML("afterend", '<p class="input-error text-danger">Invalid input!! String</p>');
+        return 0
     }
+
 }
 
 // Expence and blance caculation
