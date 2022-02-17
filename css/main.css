@@ -12,6 +12,7 @@ h1,h2,h3,h4 {
     font-weight: 600;
     line-height: 1.4;
 }
+/* custome style */
 .input-block-wraper input:focus{
     box-shadow: none;
 }
