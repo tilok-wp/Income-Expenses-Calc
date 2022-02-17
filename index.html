@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
    <head>
@@ -21,7 +22,7 @@
          <h1 class="text-center mt-2 mb-3">Income-<strong>Expence</strong> Management</h1>
       </header>
       <!-- Main content -->
-      <main>
+      <main class="p-3">
          <section class="income-expence-section">
             <div class="container">
                <div class="row">
@@ -37,7 +38,6 @@
                            <div class="input-block-wraper">
                               <label>Income: </label>
                               <input id="income-amount" class="form-control"  type="text" value="" placeholder="Income amount">
-
                            </div>
                         </div>
                         <div class="expence-wraper mt-3">
@@ -58,19 +58,19 @@
                         <button id="calculate-btn" class="btn btn-info text-white">Calculate</button>
                         <div class="result-wraper mt-2">
                            <p id="blance-error-massage" class="text-danger"></p>
-                           <h5>Total Expenses: <strong id="total-expence">00</strong></h5>
-                           <h5>Balance: <strong id="balance">00</strong></h5>
+                           <h5>Total Expenses: <strong id="total-expence"></strong></h5>
+                           <h5>Balance: <strong id="balance"></strong></h5>
                         </div>
-                        <div class="savings-wraper mt-4">
-                           <div class="input-block-wraper mb-3">
-                              <label>Savings: </label>
-                              <input id="saving-percent" class="form-control" type="text" value="" placeholder="Savings %"> % 
-                              <button id="saving-btn" class="btn btn-info text-white ms-3">Saving</button>
-                           </div>
-                           <p id="saving-error-massage" class="text-danger"></p>
-                           <h5>Savings Amount: <strong id="savings-amount">00</strong></h5>
-                           <h5>Remaining Balance: <strong id="remaining-balance">00</strong></h5>
+                     </div>
+                     <div class="savings-wraper mt-4 text-center">
+                        <div class="input-block-wraper mb-3">
+                           <label>Savings: </label>
+                           <input id="saving-percent" class="form-control" type="text" value="" placeholder="Savings %"> % 
+                           <button id="saving-btn" class="btn btn-info text-white ms-3">Saving</button>
                         </div>
+                        <p id="saving-error-massage" class="text-danger"></p>
+                        <h5>Savings Amount: <strong id="savings-amount"></strong></h5>
+                        <h5>Remaining Balance: <strong id="remaining-balance"></strong></h5>
                      </div>
                   </div>
                </div>

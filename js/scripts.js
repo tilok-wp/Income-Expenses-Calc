@@ -3,9 +3,13 @@ let balanceError = document.getElementById('blance-error-massage')
 // Input value collect
 function getInputValue(idName){
     const inputField = document.getElementById(idName)
-    const inputValue = inputField.value
-    return parseFloat(inputValue)
+    const inputValue = parseFloat(inputField.value)
+
+    if(typeof(inputValue) == 'number' && inputValue > 0){
+        return inputValue
+    }
 }
+
 // Expence and blance caculation
 function expenceBalanceCalculation(){
     const incomeAmount = getInputValue('income-amount')
@@ -21,15 +25,18 @@ function expenceBalanceCalculation(){
 function savingCalculation(){
     const incomeAmount = getInputValue('income-amount')
     const savingPercent = getInputValue('saving-percent')
+    const savingsAmountGet = document.getElementById('savings-amount')
+    const remainingGet = document.getElementById('remaining-balance')
     const savingAmount = ((incomeAmount * savingPercent) / 100)
     const balance = parseFloat(document.getElementById('balance').innerText)
     if(balance >= savingAmount){
         const remainingBalance = balance - savingAmount
-        document.getElementById('savings-amount').innerText = savingAmount
-        document.getElementById('remaining-balance').innerText = remainingBalance
+        savingsAmountGet.innerText = savingAmount
+        remainingGet.innerText = remainingBalance
+        savingError.innerText = ''
     }else {
         savingError.innerText = "Can't savings!! Savings is more than Blance"
-        balanceError.innerText = ""   
+        balanceError.innerText = savingsAmountGet.innerText = remainingGet.innerText = ""   
     }
 }
 
@@ -41,4 +48,3 @@ document.getElementById('saving-btn').addEventListener('click', function(){
     savingCalculation()
 
 })
-
