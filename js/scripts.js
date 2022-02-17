@@ -13,9 +13,9 @@ function getInputValue(idName){
         }
         return inputValue
     }else if(inputValue < 0){
-        inputField.insertAdjacentHTML("afterend", '<p class="input-error text-danger">Negative number</p>');
+        inputField.insertAdjacentHTML("afterend", '<p class="input-error text-danger">Negative number! Posative number </p>');
     }else{
-        inputField.insertAdjacentHTML("afterend", '<p class="input-error text-danger">Invalid input!! String</p>');
+        inputField.insertAdjacentHTML("afterend", '<p class="input-error text-danger">Invalid input! input number value</p>');
     }
 
 }
